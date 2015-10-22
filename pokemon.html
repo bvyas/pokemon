@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Pokemon</title>	
+	<style type="text/css">
+		div	{
+				vertical-align: top;
+				box-sizing: border-box;
+				display: inline-block;
+			}
+			#pokelist
+				{
+					width: 200%;
+				}
+				#pokelist img
+				{
+					width: 220px;
+					height: 220px;
+				}		
+	</style>
+</head>
+<body>	
+	<div id="pokelist">
+	</div>
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+	<script type="text/javascript">
+				for(i=1; i!=151; i++)
+				{
+					$('#pokelist').append('<img src="http://pokeapi.co/media/img/'+i+'.png"  alt="">');
+				}
+	</script>
+</body>
+</html>
